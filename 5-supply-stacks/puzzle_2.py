@@ -8,7 +8,6 @@ import pandas as pd
 CrateMovement = namedtuple("CrateMovement", "number_of_crates from_stack to_stack")
 stacks = []
 crate_movements = []
-stack_tops = []
 
 with open("input.txt") as f:
     match = re.search(r"(?P<crates>(.|\n)*)(\n{2})(?P<instructions>(.|\n)*)", f.read())
